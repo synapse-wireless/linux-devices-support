@@ -1,0 +1,19 @@
+# Rules to improve support for Synapse Wireless Products
+
+# SS200
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_interface", \
+    ATTRS{idVendor}=="0403", ATTRS{idProduct}=="9090", \
+    DRIVER=="", RUN{builtin}+="kmod load ftdi_sio", \
+    RUN+="/sbin/modprobe fdti_sio"
+ACTION=="add", SUBSYSTEM=="drivers", \
+    ENV{DEVPATH}=="/bus/usb-serial/drivers/ftdi_sio", \
+    ATTR{new_id}="0403 9090"
+
+# SN132 "Paddle Board"
+ACTION=="add", SUBSYSTEM=="USB", ENV{DEVTYPE}=="usb_interface", \
+    ATTRS{idVendor}=="10C4", ATTRS{idProduct}=="8382", \
+    DRIVER=="", RUN{builtin}+="kmod load cp210x", \
+    RUN+="/sbin/modprobe cp210x"
+ACTION=="add", SUBSYSTEM=="drivers", \
+    ENV{DEVPATH}=="/bus/usb-serial/drivers/cp210x", \
+    ATTR{new_id}="10C4 8382"
