@@ -8,7 +8,11 @@ die() {
 BASEDIR=$(dirname $0)
 UDEVRULES="/etc/udev/rules.d/"
 
-[ $EUID -eq 0 ] || die "You must run this script as root."
+if [ ! -z "${EUID+x}" ]; then
+	[ $EUID -eq 0 ] || die "You must run this script as root."
+else
+	[ "x`whoami`" == "xroot" ] || die "You must run this script as root."
+fi
 
 echo "Installing udev rules for Synapse devices"
 cp ${BASEDIR}/udev/98-synapse.rules ${UDEVRULES} || \
