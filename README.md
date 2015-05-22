@@ -11,7 +11,9 @@ If you are using a kernel where support has been upstreamed then this is
 unnecessary and the hardware will just work out of the box.
 
 * Linux 4.1.0 and newer
-* Ubuntu 15.04 and newer
+* Ubuntu 15.10 and newer
+* Ubuntu 15.04 (linux-image-3.19.0-17 and newer)
+* Ubuntu 14.10 (linux-image-3.16.0-38 and newer)
 
 Additionally any kernel that has the following two patches render this
 unnecessary:
