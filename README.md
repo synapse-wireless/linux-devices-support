@@ -4,6 +4,15 @@ Synapse Hardware Support for Linux
 The purpose of this repository is to provide tweaks, settings, scripts,
 and drivers to improve support for Synapse hardware devices under Linux.
 
+Upstream Support
+----------------
+
+If you are using a kernel where support has been upstreamed then this is
+unnecessary and the hardware will just work out of the box.
+
+* Linux 4.1.0 and newer
+* Ubuntu 15.04 and newer
+
 Installation
 ------------
 
