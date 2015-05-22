@@ -10,10 +10,21 @@ Upstream Support
 If you are using a kernel where support has been upstreamed then this is
 unnecessary and the hardware will just work out of the box.
 
-* Linux 4.1.0 and newer
+* Linux 4.0.0 and newer
 * Ubuntu 15.10 and newer
 * Ubuntu 15.04 (linux-image-3.19.0-17 and newer)
 * Ubuntu 14.10 (linux-image-3.16.0-38 and newer)
+
+Stable kernel trees where the patch was included:
+
+* 3.19.5
+* 3.18.13
+* 3.16.7-ckt10
+* 3.14.39
+* 3.13.11-ckt20
+* 3.12.41
+* 3.10.75
+* 3.2.69
 
 Additionally any kernel that has the following two patches render this
 unnecessary:
