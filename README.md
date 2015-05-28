@@ -14,6 +14,7 @@ unnecessary and the hardware will just work out of the box.
 * Ubuntu 15.10 and newer
 * Ubuntu 15.04 (linux-image-3.19.0-17 and newer)
 * Ubuntu 14.10 (linux-image-3.16.0-38 and newer)
+* Ubuntu 14.04 (linux-image-3.13.0-54 and newer)
 
 Stable kernel trees where the patch was included:
 
