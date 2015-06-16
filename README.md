@@ -25,6 +25,7 @@ Stable kernel trees where the patch was included:
 * 3.13.11-ckt20
 * 3.12.41
 * 3.10.75
+* 3.4.108
 * 3.2.69
 
 Additionally any kernel that has the following two patches render this
